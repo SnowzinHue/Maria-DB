@@ -1,0 +1,34 @@
+UTILIZE ESSE CODIGO PARA REAlIZAR A ATIVIDADE DO DIA 20/06/22
+select ((month(data_dev) - month(data_ret)) *30) + (day(data_dev) - day(data_ret)) AS dias_locados FROM os;
+
+
+_________________________________________________ /////////_______________________________________________________________________
+
+
+AlTER TABLE os ADD km_ret decimal(8,2);
+AlTER TABLE os ADD km_dev decimal(8,2);
+
+UPDATE os set km_ret = 1800.59 where num_os = 1;
+UPDATE os set km_ret = 10.000 where num_os = 2;
+UPDATE os set km_ret = 8528 where num_os = 3;
+UPDATE os set km_ret = 10.000 where num_os = 4;
+UPDATE os set km_ret = 34580 where num_os = 5;
+UPDATE os set km_ret = 60050 where num_os = 6;
+UPDATE os set km_ret = 4058.23 where num_os = 7;
+UPDATE os set km_ret = 60038 where num_os = 8;
+UPDATE os set km_ret = 12058 where num_os = 9;
+UPDATE os set km_ret = 10000 where num_os = 10;
+
+
+UPDATE os set km_dev = 2010.89 where num_os = 1;
+UPDATE os set km_dev = 15000 where num_os = 2;
+UPDATE os set km_dev = 9002 where num_os = 3;
+UPDATE os set km_dev = 12345 where num_os = 4;
+UPDATE os set km_dev = 39508 where num_os = 5;
+UPDATE os set km_dev = 63083 where num_os = 6;
+UPDATE os set km_dev = 4555.55 where num_os = 7;
+UPDATE os set km_dev = 62000.15 where num_os = 8;
+UPDATE os set km_dev = 19000 where num_os = 9;
+UPDATE os set km_dev = 13580 where num_os = 10;
+
+__________________________________________________ //////// _____________________________________________________________________
